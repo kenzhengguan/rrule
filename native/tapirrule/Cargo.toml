@@ -1,0 +1,15 @@
+[package]
+name = "tapirrule"
+version = "0.1.0"
+authors = []
+edition = "2021"
+
+[lib]
+name = "tapirrule"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+rustler = "0.27.0"
+rrule = "0.10.0"
+chrono = "0.4.23"
