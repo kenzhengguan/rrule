@@ -11,6 +11,8 @@ jobs:
   build_release:
     name: NIF ${{ matrix.nif }} - ${{ matrix.job.target }} (${{ matrix.job.os }})
     runs-on: ${{ matrix.job.os }}
+    permissions:
+      contents: write
     strategy:
       fail-fast: false
       matrix:
@@ -61,8 +63,6 @@ jobs:
 
     - name: Publish archives and packages
       uses: softprops/action-gh-release@v1
-      permissions:
-        contents: write
       with:
         files: |
           ${{ steps.build-crate.outputs.file-path }}
