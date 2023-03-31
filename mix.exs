@@ -1,7 +1,7 @@
 defmodule TapiRrule.MixProject do
   use Mix.Project
-  @version "0.1.1"
-  @source_url "https://github.com/TapiHQ/tapi_rrule"
+  @version "0.1.2"
+  @source_url "https://github.com/kenzhengguan/rrule"
 
   def project do
     [

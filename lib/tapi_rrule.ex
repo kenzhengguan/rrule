@@ -4,7 +4,7 @@ defmodule TapiRrule do
   use RustlerPrecompiled,
     otp_app: :tapi_rrule,
     crate: "tapirrule",
-    base_url: "https://github.com/kenzhengguan/tapi_rrule/releases/download/v#{version}",
+    base_url: "https://github.com/kenzhengguan/rrule/releases/download/v#{version}",
     force_build: System.get_env("TAPI_RRULE_BUILD") in ["1", "true"],
     version: version
 
