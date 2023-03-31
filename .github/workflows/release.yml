@@ -61,6 +61,8 @@ jobs:
 
     - name: Publish archives and packages
       uses: softprops/action-gh-release@v1
+      permissions:
+        contents: write
       with:
         files: |
           ${{ steps.build-crate.outputs.file-path }}
