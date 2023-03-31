@@ -2,10 +2,10 @@ defmodule TapiRrule do
   version = Mix.Project.config()[:version]
 
   use RustlerPrecompiled,
-    otp_app: :rustler_precompilation_example,
-    crate: "example",
-    base_url: "https://github.com/TapiHQ/tapi_rrule/releases/download/v#{version}",
-    force_build: System.get_env("RUSTLER_PRECOMPILATION_TAPI_RRULE_BUILD") in ["1", "true"],
+    otp_app: :tapi_rrule,
+    crate: "tapirrule",
+    base_url: "https://github.com/kenzhengguan/tapi_rrule/releases/download/v#{version}",
+    force_build: System.get_env("TAPI_RRULE_BUILD") in ["1", "true"],
     version: version
 
   # When loading a NIF module, dummy clauses for all NIF function are required.
