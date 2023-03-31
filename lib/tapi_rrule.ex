@@ -13,7 +13,7 @@ defmodule TapiRrule do
 
   @doc """
   Example:
-  TapiRrule.range("DTSTART:20120201T093000Z\nRRULE:FREQ=DAILY;COUNT=3", "2012-02-01", "2012-04-01")
+  TapiRrule.r_range("DTSTART:20120201T093000Z\nRRULE:FREQ=DAILY;COUNT=3", "2012-02-01", "2012-04-01")
   """
   def r_range(_, _, _), do: error()
   def error(), do: :erlang.nif_error(:nif_not_loaded)
